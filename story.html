@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Blog Title Here</title>
+    <meta name="description" content="Brief description of your blog that entices readers to click through.">
+    <link rel="icon" href="img/favicon.png" type="image/png">
+
+    <!-- Open Graph / Facebook -->  
+    <!-- LinkedIn and other platforms would generally be covered by the OG tags. -->
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://yourwebsite.com/your-blog-page" />
+    <meta property="og:title" content="Your Blog Title Here" />
+    <meta property="og:description" content="Detailed description of your blog that will show up in the social media snippet." />
+    <meta property="og:image" content="https://yourwebsite.com/path/to/image.jpg" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@YourTwitterHandle">
+    <meta name="twitter:title" content="Your Blog Title Here">
+    <meta name="twitter:description" content="Brief description of your blog that entices readers to click through.">
+    <meta name="twitter:image" content="https://yourwebsite.com/path/to/image.jpg">
+
+<!-- 
+    Schema.org Markup: Not a meta tag, but structured data (JSON-LD, Microdata) 
+    that helps search engines understand the content and context of your pages, 
+    which can also enhance sharing capabilities indirectly. 
+
+    To create Schema.org markup for your website, you can use JSON-LD, Microdata, 
+    or RDFa formats. JSON-LD (JavaScript Object Notation for Linked Data) is 
+    recommended by Google and is the most commonly used format. It allows you 
+    to add structured data in a script tag within the head or body of your HTML, 
+    making it easier to maintain and separate from your HTML markup. 
+-->
+        
+    <script type="application/ld+json">
+    
+    {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "The Title of Your Blog Post",
+    "image": [
+        "https://example.com/lead-image.jpg"
+    ],
+    "author": {
+        "@type": "Person",
+        "name": "Your Name",
+        "url": "https://example.com/author/your-name"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Your Site Name",
+        "logo": {
+        "@type": "ImageObject",
+        "url": "https://example.com/logo.jpg"
+        }
+    },
+    "datePublished": "2024-03-05",
+    "dateModified": "2024-03-05",
+    "description": "A brief summary of your blog post"
+    }
+    </script>
+
+    <!-- Stylesheets, Scripts, and other head elements go here -->
+
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <link rel="stylesheet" href="css/social-share.css">
+</head>
+<body>
+    <header>
+        <!-- Navigation and site-wide header content can go here -->
+    </header>
+
+    <main>
+        <article>
+            <header>
+                <!-- Article-specific header content -->
+                <h1>Your Article Headline Here</h1>
+                <p class="byline">By <a href="https://www.authorwebsite.com" target="_blank" rel="author noopener noreferrer">Name of Author</a> | <time datetime="YYYY-MM-DD">Publication Date</time></p>
+            </header>
+
+            <figure>
+                <img src="path/to/your/article-image.jpg" alt="Describe the image briefly">
+                <figcaption>Caption describing the image, if necessary.</figcaption>
+            </figure>
+
+            <section class="article-body">
+                <p>First paragraph of the article...</p>
+                <p>Second paragraph...</p>
+                <!-- Additional paragraphs -->
+            </section>
+        </article>
+    </main>
+
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/privacy-policy">Privacy Policy</a></li>
+                <li><a href="/terms-of-use">Terms of Use</a></li>
+            </ul>
+        </nav>
+        <p>&copy; <span class="current-year">2024</span> <a href="https://www.memberminderpro.com" target="_blank">Member Minder Pro, LLC</a>. All rights reserved.</p>
+    </footer>
+
+<script src="js/social-share.js"></script>
+</body>
+</html>
